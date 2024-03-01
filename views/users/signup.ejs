@@ -1,0 +1,52 @@
+<% layout('/layouts/boilerplate') -%>
+<style>
+  .sign-up{
+    background-color: #FE424D !important;
+    padding: 0.8rem 1.8rem !important;
+    border-radius: 0.5rem !important;
+    color: white !important;
+    border: none; 
+  }
+</style>
+<div class="row mt-3">
+  <h2 class="col-4 offset-4">Signup on WanderLust</h2>
+  <div class="col-4 offset-4">
+    <form action="/signup" method="POST" novalidate class="needs-validation">
+      <div class="mb-3">
+        <label for="username" class="form-lable">Username</label>
+        <input
+          name="username"
+          type="text"
+          id="username"
+          class="form-control"
+          autofocus
+          required
+        />
+        <div class="valid-feedback">Looks good!</div>
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-lable">Email</label>
+        <input
+          name="email"
+          type="email"
+          id="email"
+          class="form-control"
+          required
+        />
+        <div class="valid-feedback">Looks good!</div>
+      </div>
+      <div class="mb-3">
+        <label for="password" class="form-lable">Password</label>
+        <input
+          name="password"
+          type="password"
+          id="password"
+          class="form-control"
+          required
+        />
+      </div>
+
+      <button class="btn btn-success sign-up">SignUp</button>
+    </form>
+  </div>
+</div>
